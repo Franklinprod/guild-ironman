@@ -1,0 +1,241 @@
+/* Resetando o CSS Default do computador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Deixando o cabeçalho centralizado*/
+header {
+    text-align: center;
+    margin: 32px auto;    
+}
+
+/*Definindo um tamanho para a imagem e para que ela fique redonda e com bordar "colorida"*/
+header img{
+    width: 120px;
+    border-radius: 50%;
+    padding: 4px;
+    background-image: linear-gradient(90deg, #DAA520 0%, #D2691E 50.52%, #F4A460 100%); 
+ }
+
+
+/*Colocando a imagem para aumentar o tamanho quando passa o mouse por cima*/
+header div:hover{
+    transform: scale(1.3); 
+}
+
+/* Definindo imagem de fundo e que ela fica sempre fixada, mesmo rolando o scroll do mouse*/
+body {
+    background-color: rgb(78, 37, 2);
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#galeriaflex {
+    display:grid;    
+}
+
+/* Configurando a galeria - Ficar uma imagem ao lado da outra, contendo 3 imagens*/
+#galeria > div {
+    float:left;
+    width: 33%;
+    padding: 10px;
+}
+
+.foto img{
+    width: 100%;
+    display: block;
+}
+
+/*Apenas quando clicar na foto, o target dela é mostrar na mesma página*/
+#galeria .foto:target {
+    position: fixed;
+    width: 50%;
+    top: 15px;
+    left: 25%;
+    padding: 5px;
+    border: solid 1px orange;
+    box-shadow: 0 0 25px 10px #000;
+    border-radius: 5px;
+}
+
+/* Inicia a descrição sem mostrar*/
+.descricao {
+    display: none;
+}
+
+/* A descrição é mostrada quando abre o target*/
+.foto:target .descricao {
+    display: block;
+}
+
+main, footer {
+    width: 90vw;
+    margin: auto;
+ }
+
+ .subtitulos {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Inter', sans-serif;
+ }
+
+ul {
+    list-style: none; 
+}
+
+/* Deixando o menu no mesmo padrão da imagem do header*/
+.botao {
+    border-radius: 10%;
+    padding: 1px;
+    background-image: linear-gradient(90deg, #DAA520 0%, #D2691E 50.52%, #F4A460 100%); 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #8B4513;
+}
+
+/*Definindo o background de cada section, fazendo com que a parte de cima se sobressaia e fique mais bonito redonda */
+section {
+    color: #FFFFFF; 
+    background-image: linear-gradient(90deg, #DAA520 0%, #D2691E 50.52%, #F4A460 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+    opacity: 0.9;   
+}
+
+.menu {
+    height: 100%;
+    width: 100%;
+}
+
+/*Definindo o o formato das divs dentro das section */
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;  
+}
+
+
+/*Fazendo com que a lista fique uma ao lado da outra e centralizada */
+section ul {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.boostes {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 100%;
+    gap: 12px;
+    justify-content: center;
+}
+
+.preenchimento {
+    padding: 10px;
+   
+}
+
+p span {
+    font-weight: bold;
+}
+
+/*Quando passar o mouse por cima aumentar um pouco do tamanho*/
+iframe:hover {
+    transform: scale(1.02);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;    
+}
+
+.fonte-escrita {
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*Deixando os P dentro de footer centralizados*/
+footer p {
+   text-align: center;
+}
+
+/*Deixando a parte dos boostes centralizados e ao lado um do outro*/
+
+
+table {
+    margin: auto;
+    max-width: 100%;
+    overflow: scroll;  
+}
+
+table, th, td {
+  padding: 0.5rem 0.5rem;
+}
+
+th, td {
+  border: 3px solid #DAA520;
+}
+
+.overflows {
+    max-width: 100%;
+
+}
+
+/*Deixando o cabeçalho da tabela centralizado*/
+thead {
+    background-color: #DAA520;
+    color: #e2e8f0;
+    text-align: center;
+}
+
+/*Quando passar o mouse por cima dos TR mudar de cor*/
+tr:hover {
+    background-color: #DAA520;
+  }
+
+  @media screen (min-width: 1000px)
+  {
+    .overflows {
+        overflow: scroll;
+    }
+
+    .botao {
+        border-radius: 10%;
+        padding: 1px;
+        background-image: linear-gradient(90deg, #DAA520 0%, #D2691E 50.52%, #F4A460 100%); 
+    }
+    
+}
+
+form {
+   color: #DAA520;
+   border: 2px solid #DAA520;
+}
+
+form div {
+    padding: 10px;
+}
+
+
+
+
+
